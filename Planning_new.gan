@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Planning JOBSTAGES" company="CENTRE NATIONAL DE DEVELOPPEMENT INFORMATIQUE" webLink="https://www.cenadi.cm/" view-date="2025-08-09" view-index="0" gantt-divider-location="440" resource-divider-location="278" version="3.3.3316" locale="fr_FR">
+    <description><![CDATA[Notre project porte sur le developpement d'une application mobile de recherche de stage et d'emploi celon les competence et la localiter de l'utilisateur.]]></description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="-1"/>
+        <field id="tpd3" name="Nom" width="214" order="0"/>
+        <field id="tpd4" name="Date de début" width="112" order="1"/>
+        <field id="tpd5" name="Date de fin" width="113" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="resources"/>
+        <option id="taskLabelRight" value="length"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[7]]></timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="199" order="0"/>
+        <field id="1" name="Rôle par défaut" width="75" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="cec83d665a3f4e87b9cec2e144d54128" name="Dossier d'insertion" meeting="false" start="2025-08-11" duration="1" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="41def7f9a4b44227ba626ce5646ea7ec" name="Dossier existant" meeting="false" start="2025-08-12" duration="3" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="81b5efc5d850401e94ce115634683198" name="Cahier de charge" meeting="false" start="2025-08-15" duration="5" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="faacb545f9a5467d9b98350aa4ee7cfb" name="Dossier d'analyse et conception" meeting="false" start="2025-08-21" duration="6" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="6f86f73fde5e42f78476fdfe079892ff" name="Dossier realisation" meeting="false" start="2025-08-28" duration="29" complete="0" expand="true">
+            <task id="5" uid="4b96416efa854969b736d697e1dd42d5" name="Outils et logiciel de developpement" meeting="false" start="2025-08-28" duration="1" complete="0" expand="true"/>
+            <task id="6" uid="f4f22145618a43d8bfc7799bb47cfcd1" name="Creation des vues" meeting="false" start="2025-08-29" duration="3" complete="0" expand="true"/>
+            <task id="7" uid="a577858335404f979f92881c726d3876" name="Codage" meeting="false" start="2025-09-03" duration="24" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="TCHAMBA" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="ZEUDJO" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Mme NGO KANA" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="Developpeur"/>
+        <role id="2" name="designeur"/>
+    </roles>
+</project>
